@@ -1,7 +1,7 @@
 {
-	"name": "your-backlog",
+	"name": "bbe",
 	"version": "0.1.0",
-	"description": "Your Backlog",
+	"description": "Block Bindings Experiments",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",

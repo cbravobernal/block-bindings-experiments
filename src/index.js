@@ -2,7 +2,7 @@ import { registerBlockBindingsSource } from '@wordpress/blocks';
 import { __ } from '@wordpress/i18n';
 
 registerBlockBindingsSource( {
-	name: 'carlos/smile-cry',
+	name: 'bbe/smile-cry',
 	useContext: [ 'postId', 'postType' ],
 	getValues: ( { bindings } ) => {
 		if ( bindings.content.args.key === 'smile' ) {
