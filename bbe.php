@@ -7,7 +7,7 @@
  **/
 function bbe_enqueue_editor_script() {
 	wp_enqueue_script(
-		'smile-editor',
+		'bbe-editor',
 		plugins_url( 'build/index.js', __FILE__ ),
 		array( 'wp-plugins', 'wp-edit-post', 'wp-element', 'wp-components', 'wp-data', 'wp-i18n' ),
 		gmdate( 's' )
