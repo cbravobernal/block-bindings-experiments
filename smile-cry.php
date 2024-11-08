@@ -19,7 +19,7 @@ add_action(
 	'init',
 	function () {
 		register_block_bindings_source(
-			'wpmovies/runtime',
+			'carlos/smile-cry',
 			array(
 				'label'              => __( 'Emoji loader', 'custom-bindings' ),
 				'get_value_callback' => function ( array $source_args, $block_instance ) {
