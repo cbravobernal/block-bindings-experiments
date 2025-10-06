@@ -21,7 +21,7 @@ add_action(
 		register_block_bindings_source(
 			'bbe/smile-cry',
 			array(
-				'label'              => __( 'Emoji loader', 'custom-bindings' ),
+				'label'              => __( 'Emoji Loader', 'custom-bindings' ),
 				'get_value_callback' => function ( array $source_args, $block_instance ) {
 					if ( ! isset( $source_args['key'] ) ) {
 						return '';
@@ -35,6 +35,25 @@ add_action(
 				},
 				'uses_context'       => array( 'postId' ),
 			)
+		);
+		register_block_bindings_source(
+			'bbe/read-only-info',
+			array(
+				'label'              => __( 'Read-only Information', 'custom-bindings' ),
+				'get_value_callback' => function ( array $source_args, $block_instance ) {
+					return 'This is read-only content that cannot be edited';
+				},
+				'uses_context'       => array( 'postId' ),
+			)
+		);
+		register_block_bindings_source(
+			'bbe/now-date',
+			array(
+				'label'              => __( 'Current dates', 'custom-bindings' ),
+				'get_value_callback' => function ( array $source_args, $block_instance ) {
+					return gmdate( 'Y M D' );
+				},
+			),
 		);
 	}
 );

@@ -19,6 +19,7 @@
 	},
 	"prettier": "@wordpress/prettier-config",
 	"dependencies": {
-		"@wordpress/blocks": "^13.8.0"
+		"@wordpress/blocks": "^13.8.0",
+		"@wordpress/components": "^30.3.0"
 	}
 }
